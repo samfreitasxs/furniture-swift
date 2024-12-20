@@ -11,6 +11,7 @@
 		DF358A842D14AF4500409AB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF358A832D14AF4500409AB9 /* ContentView.swift */; };
 		DF358A862D14AF4900409AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF358A852D14AF4900409AB9 /* Assets.xcassets */; };
 		DF358A892D14AF4900409AB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF358A882D14AF4900409AB9 /* Preview Assets.xcassets */; };
+		DFD991DC2D15FACD00DE0B2A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD991DB2D15FACD00DE0B2A /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DF358A832D14AF4500409AB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF358A852D14AF4900409AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF358A882D14AF4900409AB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFD991DB2D15FACD00DE0B2A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DF358A812D14AF4500409AB9 /* furniture_swiftApp.swift */,
 				DF358A832D14AF4500409AB9 /* ContentView.swift */,
+				DFD991DA2D15FAB200DE0B2A /* Models */,
 				DF358A852D14AF4900409AB9 /* Assets.xcassets */,
 				DF358A872D14AF4900409AB9 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				DF358A882D14AF4900409AB9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFD991DA2D15FAB200DE0B2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFD991DB2D15FACD00DE0B2A /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				DF358A842D14AF4500409AB9 /* ContentView.swift in Sources */,
 				DF358A822D14AF4500409AB9 /* furniture_swiftApp.swift in Sources */,
+				DFD991DC2D15FACD00DE0B2A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
