@@ -37,15 +37,14 @@ struct ContentView: View {
             }
             ,
             alignment: .bottom
-        )
-        .ignoresSafeArea(.all, edge: .bottom)
+        ).ignoresSafeArea(.all, edge: .bottom)
         
     }
     
     func TabButton(tab: Tab) -> some View {
         GeometryReader{proxy in
             Button(action: {
-                withanimation(.spring())
+                withAnimation(.spring()){}
             },
             
                     label: {})
@@ -88,7 +87,7 @@ struct ContentView: View {
     
     
 extension View{
-        func (getSafeArea() -> UIEdgeInsets {
+        func getSafeArea() -> UIEdgeInsets {
             
             guard let screen = UIApplication.shared.connectedScenes.first as?
                     UIWindowScene else {
