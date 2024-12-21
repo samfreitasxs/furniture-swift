@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State private var search: String = " "
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{ 
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .padding(.leading)
+                
+                TextField("Search For Furniture ", text: $search)
+                    .padding()
+            }
+            .background(Color("kSecondary"))
+            .cornerRadius(12)
+            
+            Image(systemName: "camera")
+                .padding()
+                .foregroundColor(.white)
+                .background(Color("kPrimary"))
+                .cornerRadius(12)
+            
+        }
+            .padding(.horizontal)
     }
 }
 

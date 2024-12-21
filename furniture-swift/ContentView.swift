@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @StateObject var cartManager = CartManager()
     @State var currentTab: Tab = .Home
     
     init() {
@@ -96,6 +96,7 @@ struct ContentView: View {
     struct ContentView_Preview: PreviewProvider {
         static var previews: some View {
             ContentView()
+                .environmentObject(CartManager())
         }
     }
     
