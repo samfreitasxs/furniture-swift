@@ -29,7 +29,7 @@ extension PaymentButton {
         var action: () -> Void
         
         
-        func markeCoordinator() -> Coordinator {
+        func makeCoordinator() -> Coordinator {
             Coordinator(action: action)
         }
         
