@@ -23,6 +23,7 @@ struct ProductCardView: View {
                     
                     Text(product.name)
                         .font(.headline)
+                        .foregroundColor(.black)
                         .padding(.vertical, 1)
                     
                     Text(product.supplier)

@@ -33,7 +33,7 @@ var productList = [
             supplier: "Home Depo",
             price: 350),
     Product(name: "Beatiful Couch",
-            image: "f4",
+            image: "fn1",
             description: "",
             supplier: "IKEA",
             price: 350),

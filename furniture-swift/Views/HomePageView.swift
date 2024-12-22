@@ -11,7 +11,7 @@ struct HomePageView: View {
     @EnvironmentObject var cartManager: CartManager
     var body: some View {
         NavigationStack {
-            ZStack(alignment: .top){
+            ZStack(alignment:.top){
                 Color.white
                     .edgesIgnoringSafeArea(.all)
                 
@@ -39,11 +39,15 @@ struct HomePageView: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 10) {
                             ForEach(productList, id: \.id){product in
-                                NavigationLink{} label: {
+                                NavigationLink{
+                                    Text(product.name)
+                                } label: {
                                     ProductCardView(product: product)
+                                        .environmentObject(cartManager)
                                 }
                             }
                         }
+                        .padding(.horizontal)
                     }
                     
                 }
@@ -80,10 +84,10 @@ struct AppBar: View {
                     }
                 }
                 Text( "Find The Most \nLuxurios")
-                    .font(.largeTitle .bold())
+                    .font(.title .bold())
                 
-                + Text(" Furniture")
-                    .font(.largeTitle . bold())
+                + Text("Furniture")
+                    .font(.title .bold())
                     .foregroundColor(Color("kPrimary"))
             }
         }
