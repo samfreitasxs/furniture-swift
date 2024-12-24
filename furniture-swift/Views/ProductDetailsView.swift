@@ -27,7 +27,36 @@ struct ProductDetailsView: View {
                             .padding(.top, 63)
                             .padding(.trailing, 20)
                     }
+                    VStack(alignment: .leading){
+                        HStack{
+                            Text(product.name)
+                                .font(.title .bold())
+                            
+                            
+                            Spacer()
+                            
+                            Text("$\(product.price).00")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding(.horizontal)
+                                .background(Color("kSecondary"))
+                                .cornerRadius(12)
+                        }
+                        .padding(.vertical)
+                        
+                        HStack(spacing: 10){
+                            ForEach(0..<5){index in
+                                Image(systemName: "star.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundColor(.yellow)}
+                        }
+                        Text("(4.5)")
+                            .foregroundColor(.gray)
+                    }
+                    .padding(.vertical)
                     
+                    Text("")
                 }
             }
         }
