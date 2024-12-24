@@ -89,7 +89,6 @@ struct ContentView: View {
         }
         .frame(height: 25)
     }
-    
 }
     
     struct ContentView_Preview: PreviewProvider {
@@ -98,8 +97,6 @@ struct ContentView: View {
                 .environmentObject(CartManager())
         }
     }
-    
-    
     enum Tab: String, CaseIterable {
         case Home = "house"
         case Search = "magnifyingglass.circle"
