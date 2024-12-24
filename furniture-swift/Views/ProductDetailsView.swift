@@ -53,10 +53,15 @@ struct ProductDetailsView: View {
                         }
                         Text("(4.5)")
                             .foregroundColor(.gray)
+                        
                     }
                     .padding(.vertical)
                     
-                    Text("")
+                    Text("Description")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                    
+                    Text(product.description)
                 }
             }
         }
