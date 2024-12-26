@@ -58,7 +58,7 @@ struct ProductDetailsView: View {
                     .padding(.vertical)
                     
                     Text("Description")
-                        .font(.title3)
+                        .font(.title2)
                         .fontWeight(.medium)
                     
                     Text(product.description)
