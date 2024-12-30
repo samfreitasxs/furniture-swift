@@ -51,8 +51,6 @@ struct ProductDetailsView: View {
                                     .frame(width: 20, height: 20)
                                     .foregroundColor(.yellow)}
                         }
-                        Text("(4.5)")
-                            .foregroundColor(.gray)
                         
                     }
                     .padding(.vertical)
