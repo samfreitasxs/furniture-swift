@@ -32,7 +32,7 @@ struct CartView: View {
                 Text("Your Cart is Empty")
             }
         }
-        .navigationTitle(Text("My Cart"))
+        .navigationTitle(Text("My Cartt"))
         .padding(.top)
     }
 }
